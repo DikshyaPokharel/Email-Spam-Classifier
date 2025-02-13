@@ -12,3 +12,43 @@ __pycache__/
 model/
 static/
 
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment folder
+venv/
+
+# Ignore model and pickled files (optional, remove if you want to track them)
+*.pkl
+*.keras
+*.pickle
+
+# Ignore system files (like .DS_Store on macOS)
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore all files inside the static folder (if needed)
+static/
+
+# Add files to keep in Git
+!app.py
+!requirements.txt
+!README.md
+!templates/
+
+# Make sure that the specific model files, pickled files, etc. are added
+!rf_model.pkl
+!spam_model.keras
+!tokenizer.pickle
+!word_features.pkl
+
+# Keep other important files in the repository
+!index.html
+!result.html
